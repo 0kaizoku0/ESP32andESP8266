@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+	
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;  /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1;  /* Sit on top */
+  padding-top: 100px;  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;  /* Full width */
+  height: 100%;  /* Full height */
+  overflow: auto;  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  /*width: 80%;
+  max-width: 700px;*/
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.MsoNormal {
+	margin: 0cm;
+	font-size: 11.0pt;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	color: black;
+}
+span.CodingLineCar {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size: 10.0pt;
+	font-weight: normal;
+	color: black;
+	background: #F2F2F2;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D9D9D9;
+}
+
+body{
+	margin: 100px;
+	background-color: #fff0cf;
+};
+-->
+</style>
+</head>
+
+<body>
+
+<h1>Visual Studio Code</h1>
+<p>Descargar Visual Studio Code del siguiente enlace <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>.</p>
+<p class="MsoNormal">Selecciona la versión de 64 bits preferentemente. Si tienes  permisos de administrador en tu computadora, selecciona <span class="CodingLineCar">System Installer</span></span>, si no,  hay que seleccionar <span class="CodingLineCar">User  Installer</span></span>.</p>
+<p class="MsoNormal"><img src="https://i.imgur.com/VU33dNX.png" alt="Midnight sun in Lofoten, Norway" width="147" class="myImages" id="myImg"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Una vez descargado abre la aplicación con doble clic.</p>
+<p class="MsoNormal"><img class="myImages" id="myImg" src="https://i.imgur.com/VU33dNX.png" alt="s in Lofoten, Norway" width="147"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Se abrirá la siguiente ventana, donde aceptaremos los  términos de licencia y daremos clic en siguiente varias veces hasta llegar a  Instalar.</p>
+<p class="MsoNormal"><img class="myImages" id="myImg" src="https://i.imgur.com/VU33dNX.png" alt="Gerirangerfjord, Norway" width="147"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span class="MsoNormal"><img class="myImages" id="myImg" src="https://i.imgur.com/VU33dNX.png" alt="Gerirangerfjord, Norway" width="147"></span><span class="MsoNormal"><img class="myImages" id="myImg" src="https://i.imgur.com/VU33dNX.png" alt="Gerirangerfjord, Norway" width="147"></span></p>
+<p class="MsoNormal">El programa comenzará a instalarse.</p>
+<p class="MsoNormal">Una vez terminado podemos ejecutarlo dejando la opción  marcada y dando clic en Finalizar.</p>
+<p class="MsoNormal">&nbsp;</p>
+<!– ------------------------------------------------- ->
+<!– Finalizamos con el script para todas las imagenes ->
+<!– ------------------------------------------------- ->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+var span2 = document.getElementsByClassName("modal-content")[0];
+span2.onclick = function() {
+  modal.style.display = "none";
+}	
+
+document.onkeydown = function() {
+  modal.style.display = "none";
+}	
+
+
+</script>
+
+
+</body>
+</html>
