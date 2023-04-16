@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -62,7 +62,7 @@
 <libraries>
 <library name="Boards" urn="urn:adsk.eagle:library:39983904">
 <packages>
-<package name="MODULE_ESP32_DEVKIT_V1" urn="urn:adsk.eagle:footprint:39983905/2" locally_modified="yes" library_version="3" library_locally_modified="yes">
+<package name="MODULE_ESP32_DEVKIT_V1" urn="urn:adsk.eagle:footprint:39983905/3" library_version="5">
 <wire x1="14.28" y1="-25.2" x2="3.211" y2="-25.2" width="0.127" layer="51"/>
 <wire x1="3.211" y1="-25.2" x2="-3.5" y2="-25.2" width="0.127" layer="51"/>
 <wire x1="-3.5" y1="-25.2" x2="-14.23" y2="-25.2" width="0.127" layer="51"/>
@@ -174,20 +174,23 @@
 <wire x1="-10.6" y1="9" x2="-10.6" y2="8.8" width="0.2" layer="21" curve="-180"/>
 <wire x1="-10.6" y1="8.8" x2="-10.6" y2="9" width="0.2" layer="21" curve="-180"/>
 </package>
-<package name="STEP-UP" library_version="3" library_locally_modified="yes">
+<package name="STEP-UP" urn="urn:adsk.eagle:footprint:40068050/1" library_version="5">
 <wire x1="-22.5" y1="10.5" x2="22.5" y2="10.5" width="0.1524" layer="21"/>
 <wire x1="22.5" y1="10.5" x2="22.5" y2="-10.5" width="0.1524" layer="21"/>
 <wire x1="22.5" y1="-10.5" x2="-22.5" y2="-10.5" width="0.1524" layer="21"/>
 <wire x1="-22.5" y1="-10.5" x2="-22.5" y2="10.5" width="0.1524" layer="21"/>
-<pad name="GND_IN" x="-20.32" y="8.89" drill="1" diameter="2.54" shape="square"/>
-<pad name="V_IN" x="-20.32" y="-8.89" drill="1" diameter="2.54" shape="square"/>
-<pad name="V_OUT" x="20.32" y="-8.89" drill="1" diameter="2.54" shape="square"/>
-<pad name="GND_OUT" x="20.32" y="8.89" drill="1" diameter="2.54" shape="square"/>
-<rectangle x1="-17.78" y1="-10.16" x2="-13.97" y2="-6.35" layer="21"/>
+<wire x1="-18.415" y1="-10.16" x2="-18.415" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="1.27" x2="-6.985" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-6.985" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-10.16" x2="-18.415" y2="-10.16" width="0.127" layer="21"/>
+<pad name="GND_IN" x="-20.32" y="7.62" drill="1" diameter="2.54" shape="square"/>
+<pad name="V_IN" x="-20.32" y="-7.62" drill="1" diameter="2.54" shape="square"/>
+<pad name="V_OUT" x="20.32" y="-7.62" drill="1" diameter="2.54" shape="square"/>
+<pad name="GND_OUT" x="20.32" y="7.62" drill="1" diameter="2.54" shape="square"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="MODULE_ESP32_DEVKIT_V1" urn="urn:adsk.eagle:package:39983907/4" type="model" library_version="3" library_locally_modified="yes">
+<package3d name="MODULE_ESP32_DEVKIT_V1" urn="urn:adsk.eagle:package:39983907/5" type="model" library_version="5">
 <packageinstances>
 <packageinstance name="MODULE_ESP32_DEVKIT_V1"/>
 </packageinstances>
@@ -196,6 +199,11 @@
 <description>&lt;b&gt;ROB-14450&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="ROB14450"/>
+</packageinstances>
+</package3d>
+<package3d name="STEP-UP" urn="urn:adsk.eagle:package:40068052/2" type="model" library_version="5">
+<packageinstances>
+<packageinstance name="STEP-UP"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -261,7 +269,7 @@
 <pin name="PWMB" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="GND_3" x="15.24" y="-10.16" length="middle" rot="R180"/>
 </symbol>
-<symbol name="STEP-UP" library_version="3" library_locally_modified="yes">
+<symbol name="STEP-UP" urn="urn:adsk.eagle:symbol:40068051/1" library_version="5">
 <pin name="GND_IN" x="-17.78" y="2.54" visible="pin" length="middle"/>
 <pin name="V_IN" x="-17.78" y="-2.54" visible="pin" length="middle"/>
 <pin name="GND_OUT" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
@@ -275,7 +283,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP32-DEVKIT-V1" urn="urn:adsk.eagle:component:39983908/3" prefix="U" library_version="3" library_locally_modified="yes">
+<deviceset name="ESP32-DEVKIT-V1" urn="urn:adsk.eagle:component:39983908/4" prefix="U" library_version="5">
 <description>Dual core, Wi-Fi: 2.4 GHz up to 150 Mbits/s,BLE (Bluetooth Low Energy) and legacy Bluetooth, 32 bits, Up to 240 MHz    &lt;a href="https://pricing.snapeda.com/parts/ESP32-DEVKIT-V1/Do%20it/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ESP32-DEVKIT-V1" x="0" y="0"/>
@@ -314,7 +322,7 @@
 <connect gate="G$1" pin="VP" pad="17"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39983907/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39983907/5"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -373,7 +381,7 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 </device>
 </devices>
 </deviceset>
-<deviceset name="STEP-UP" library_version="3" library_locally_modified="yes">
+<deviceset name="STEP-UP" urn="urn:adsk.eagle:component:40068053/2" library_version="5">
 <gates>
 <gate name="G$1" symbol="STEP-UP" x="0" y="0"/>
 </gates>
@@ -385,6 +393,9 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 <connect gate="G$1" pin="V_IN" pad="V_IN"/>
 <connect gate="G$1" pin="V_OUT" pad="V_OUT"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40068052/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -471,9 +482,9 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 </class>
 </classes>
 <parts>
-<part name="U1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ESP32-DEVKIT-V1" device="" package3d_urn="urn:adsk.eagle:package:39983907/4"/>
+<part name="U1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ESP32-DEVKIT-V1" device="" package3d_urn="urn:adsk.eagle:package:39983907/5"/>
 <part name="U2" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ROB-14450" device="" package3d_urn="urn:adsk.eagle:package:39984966/2"/>
-<part name="U$1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="STEP-UP" device=""/>
+<part name="U$1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="STEP-UP" device="" package3d_urn="urn:adsk.eagle:package:40068052/2"/>
 <part name="X1" library="Pines" library_urn="urn:adsk.eagle:library:34128979" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:36801862/2"/>
 </parts>
 <sheets>
