@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -130,7 +130,7 @@
 <hole x="-12.23" y="-23.2" drill="3"/>
 <hole x="12.28" y="-23.2" drill="3"/>
 </package>
-<package name="ROB14450" urn="urn:adsk.eagle:footprint:39984964/1" library_version="3">
+<package name="ROB14450" urn="urn:adsk.eagle:footprint:39984964/2" library_version="14">
 <description>&lt;b&gt;ROB-14450&lt;/b&gt;&lt;br&gt;
 </description>
 <pad name="1" x="-7.62" y="8.89" drill="1.11" diameter="1.665" rot="R270"/>
@@ -149,7 +149,7 @@
 <pad name="14" x="7.62" y="-3.81" drill="1.11" diameter="1.665" rot="R270"/>
 <pad name="15" x="7.62" y="-6.35" drill="1.11" diameter="1.665" rot="R270"/>
 <pad name="16" x="7.62" y="-8.89" drill="1.11" diameter="1.665" rot="R270"/>
-<text x="0" y="-12.97" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-12.7" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="12.43" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.2" layer="51"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.2" layer="51"/>
@@ -174,7 +174,7 @@
 <wire x1="-10.6" y1="9" x2="-10.6" y2="8.8" width="0.2" layer="21" curve="-180"/>
 <wire x1="-10.6" y1="8.8" x2="-10.6" y2="9" width="0.2" layer="21" curve="-180"/>
 </package>
-<package name="STEP-UP" urn="urn:adsk.eagle:footprint:40068050/1" library_version="5">
+<package name="STEP-UP" urn="urn:adsk.eagle:footprint:40068050/3" library_version="14">
 <wire x1="-22.5" y1="10.5" x2="22.5" y2="10.5" width="0.1524" layer="21"/>
 <wire x1="22.5" y1="10.5" x2="22.5" y2="-10.5" width="0.1524" layer="21"/>
 <wire x1="22.5" y1="-10.5" x2="-22.5" y2="-10.5" width="0.1524" layer="21"/>
@@ -187,6 +187,64 @@
 <pad name="V_IN" x="-20.32" y="-7.62" drill="1" diameter="2.54" shape="square"/>
 <pad name="V_OUT" x="20.32" y="-7.62" drill="1" diameter="2.54" shape="square"/>
 <pad name="GND_OUT" x="20.32" y="7.62" drill="1" diameter="2.54" shape="square"/>
+<text x="0" y="8.89" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
+<text x="0" y="-8.89" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="MINI560" urn="urn:adsk.eagle:footprint:40070188/4" library_version="14">
+<pad name="P$1" x="-13.97" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$2" x="-13.97" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$3" x="-13.97" y="5.11" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$4" x="-13.97" y="7.65" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$5" x="-11.97" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$6" x="-11.97" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$7" x="-11.97" y="5.11" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$8" x="-11.97" y="7.65" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$9" x="14.03" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$10" x="14.03" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$11" x="14.03" y="5.11" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$12" x="14.03" y="7.65" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$13" x="16.03" y="-6.35" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$14" x="16.03" y="-3.81" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$15" x="16.03" y="5.11" drill="1" diameter="2.54" shape="square"/>
+<pad name="P$16" x="16.03" y="7.65" drill="1" diameter="2.54" shape="square"/>
+<wire x1="-13.97" y1="-8.35" x2="-13.97" y2="9.65" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="9.65" x2="16.03" y2="9.65" width="0.127" layer="21"/>
+<wire x1="16.03" y1="9.65" x2="16.03" y2="-8.35" width="0.127" layer="21"/>
+<wire x1="16.03" y1="-8.35" x2="-13.97" y2="-8.35" width="0.127" layer="21"/>
+<wire x1="-5.97" y1="8.65" x2="-5.97" y2="-1.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-5.97" y1="-1.35" x2="4.03" y2="-1.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="4.03" y1="-1.35" x2="4.03" y2="8.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="4.03" y1="8.65" x2="-5.97" y2="8.65" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-4.97" y1="-3.35" x2="-4.97" y2="-6.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-4.97" y1="-6.35" x2="-1.97" y2="-6.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.97" y1="-6.35" x2="-1.97" y2="-3.35" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-1.97" y1="-3.35" x2="-4.97" y2="-3.35" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="10.16" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="MICROMOTOR-L" urn="urn:adsk.eagle:footprint:40074923/3" library_version="14">
+<pad name="M+" x="0" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="M-" x="0" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+<smd name="ARMOR" x="8.89" y="0" dx="15.24" dy="11.43" layer="1"/>
+<wire x1="0" y1="6" x2="25.4" y2="6" width="0.127" layer="21"/>
+<wire x1="25.4" y1="6" x2="25.4" y2="-6" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-6" x2="0" y2="-6" width="0.127" layer="21"/>
+<wire x1="0" y1="-6" x2="0" y2="6" width="0.127" layer="21"/>
+<wire x1="17" y1="6.35" x2="17" y2="-6.35" width="0.127" layer="21"/>
+<text x="19.05" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="21.59" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="MICROMOTOR-R" urn="urn:adsk.eagle:footprint:40074922/3" library_version="14">
+<pad name="M+" x="0" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="M-" x="0" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+<smd name="ARMOR" x="8.89" y="0" dx="15.24" dy="11.43" layer="1"/>
+<wire x1="0" y1="6" x2="25.4" y2="6" width="0.127" layer="21"/>
+<wire x1="25.4" y1="6" x2="25.4" y2="-6" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-6" x2="0" y2="-6" width="0.127" layer="21"/>
+<wire x1="0" y1="-6" x2="0" y2="6" width="0.127" layer="21"/>
+<wire x1="17" y1="6.35" x2="17" y2="-6.35" width="0.127" layer="21"/>
+<text x="19.05" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="21.59" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -195,15 +253,30 @@
 <packageinstance name="MODULE_ESP32_DEVKIT_V1"/>
 </packageinstances>
 </package3d>
-<package3d name="ROB14450" urn="urn:adsk.eagle:package:39984966/2" type="model" library_version="3">
+<package3d name="ROB14450" urn="urn:adsk.eagle:package:39984966/3" type="model" library_version="14">
 <description>&lt;b&gt;ROB-14450&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="ROB14450"/>
 </packageinstances>
 </package3d>
-<package3d name="STEP-UP" urn="urn:adsk.eagle:package:40068052/2" type="model" library_version="5">
+<package3d name="STEP-UP" urn="urn:adsk.eagle:package:40068052/4" type="model" library_version="14">
 <packageinstances>
 <packageinstance name="STEP-UP"/>
+</packageinstances>
+</package3d>
+<package3d name="MINI560" urn="urn:adsk.eagle:package:40070190/6" type="model" library_version="15">
+<packageinstances>
+<packageinstance name="MINI560"/>
+</packageinstances>
+</package3d>
+<package3d name="MICROMOTOR-L" urn="urn:adsk.eagle:package:40074926/4" type="model" library_version="14">
+<packageinstances>
+<packageinstance name="MICROMOTOR-L"/>
+</packageinstances>
+</package3d>
+<package3d name="MICROMOTOR-R" urn="urn:adsk.eagle:package:40074925/4" type="model" library_version="14">
+<packageinstances>
+<packageinstance name="MICROMOTOR-R"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -269,7 +342,7 @@
 <pin name="PWMB" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="GND_3" x="15.24" y="-10.16" length="middle" rot="R180"/>
 </symbol>
-<symbol name="STEP-UP" urn="urn:adsk.eagle:symbol:40068051/1" library_version="5">
+<symbol name="STEP-UP" urn="urn:adsk.eagle:symbol:40068051/1" library_version="10">
 <pin name="GND_IN" x="-17.78" y="2.54" visible="pin" length="middle"/>
 <pin name="V_IN" x="-17.78" y="-2.54" visible="pin" length="middle"/>
 <pin name="GND_OUT" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
@@ -281,45 +354,67 @@
 <text x="0" y="-7.62" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <text x="0" y="7.62" size="1.778" layer="95" align="top-center">&gt;NAME</text>
 </symbol>
+<symbol name="MINI560" urn="urn:adsk.eagle:symbol:40070189/2" library_version="10">
+<pin name="IN+" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="IN-" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="OUT+" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.27" layer="94" align="top-center">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.27" layer="94" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="MOTOR" urn="urn:adsk.eagle:symbol:40074924/1" library_version="13">
+<circle x="0" y="0" radius="5.6796125" width="0.254" layer="94"/>
+<text x="0" y="0" size="6.4516" layer="94" align="center">M</text>
+<text x="-7.62" y="2.54" size="1.27" layer="94" align="center">+</text>
+<text x="7.62" y="2.54" size="1.27" layer="94" align="center">-</text>
+<text x="0" y="7.62" size="1.27" layer="94" align="center">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.27" layer="94" align="center">&gt;VALUE</text>
+<pin name="M+" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="M-" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP32-DEVKIT-V1" urn="urn:adsk.eagle:component:39983908/4" prefix="U" library_version="5">
+<deviceset name="ESP32-DEVKIT-V1" urn="urn:adsk.eagle:component:39983908/5" prefix="U" library_version="6" library_locally_modified="yes">
 <description>Dual core, Wi-Fi: 2.4 GHz up to 150 Mbits/s,BLE (Bluetooth Low Energy) and legacy Bluetooth, 32 bits, Up to 240 MHz    &lt;a href="https://pricing.snapeda.com/parts/ESP32-DEVKIT-V1/Do%20it/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="ESP32-DEVKIT-V1" x="0" y="0"/>
+<gate name="ESP32-DEVKIT-V1" symbol="ESP32-DEVKIT-V1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="MODULE_ESP32_DEVKIT_V1">
 <connects>
-<connect gate="G$1" pin="3V3" pad="1"/>
-<connect gate="G$1" pin="D12" pad="27"/>
-<connect gate="G$1" pin="D13" pad="28"/>
-<connect gate="G$1" pin="D14" pad="26"/>
-<connect gate="G$1" pin="D15" pad="3"/>
-<connect gate="G$1" pin="D18" pad="9"/>
-<connect gate="G$1" pin="D19" pad="10"/>
-<connect gate="G$1" pin="D2" pad="4"/>
-<connect gate="G$1" pin="D21" pad="11"/>
-<connect gate="G$1" pin="D22" pad="14"/>
-<connect gate="G$1" pin="D23" pad="15"/>
-<connect gate="G$1" pin="D25" pad="23"/>
-<connect gate="G$1" pin="D26" pad="24"/>
-<connect gate="G$1" pin="D27" pad="25"/>
-<connect gate="G$1" pin="D32" pad="21"/>
-<connect gate="G$1" pin="D33" pad="22"/>
-<connect gate="G$1" pin="D34" pad="19"/>
-<connect gate="G$1" pin="D35" pad="20"/>
-<connect gate="G$1" pin="D4" pad="5"/>
-<connect gate="G$1" pin="D5" pad="8"/>
-<connect gate="G$1" pin="EN" pad="16"/>
-<connect gate="G$1" pin="GND" pad="2 29"/>
-<connect gate="G$1" pin="RX0" pad="12"/>
-<connect gate="G$1" pin="RX2" pad="6"/>
-<connect gate="G$1" pin="TX0" pad="13"/>
-<connect gate="G$1" pin="TX2" pad="7"/>
-<connect gate="G$1" pin="VIN" pad="30"/>
-<connect gate="G$1" pin="VN" pad="18"/>
-<connect gate="G$1" pin="VP" pad="17"/>
+<connect gate="ESP32-DEVKIT-V1" pin="3V3" pad="1"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D12" pad="27"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D13" pad="28"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D14" pad="26"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D15" pad="3"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D18" pad="9"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D19" pad="10"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D2" pad="4"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D21" pad="11"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D22" pad="14"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D23" pad="15"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D25" pad="23"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D26" pad="24"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D27" pad="25"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D32" pad="21"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D33" pad="22"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D34" pad="19"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D35" pad="20"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D4" pad="5"/>
+<connect gate="ESP32-DEVKIT-V1" pin="D5" pad="8"/>
+<connect gate="ESP32-DEVKIT-V1" pin="EN" pad="16"/>
+<connect gate="ESP32-DEVKIT-V1" pin="GND" pad="2 29"/>
+<connect gate="ESP32-DEVKIT-V1" pin="RX0" pad="12"/>
+<connect gate="ESP32-DEVKIT-V1" pin="RX2" pad="6"/>
+<connect gate="ESP32-DEVKIT-V1" pin="TX0" pad="13"/>
+<connect gate="ESP32-DEVKIT-V1" pin="TX2" pad="7"/>
+<connect gate="ESP32-DEVKIT-V1" pin="VIN" pad="30"/>
+<connect gate="ESP32-DEVKIT-V1" pin="VN" pad="18"/>
+<connect gate="ESP32-DEVKIT-V1" pin="VP" pad="17"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:39983907/5"/>
@@ -337,34 +432,34 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ROB-14450" urn="urn:adsk.eagle:component:39984967/2" prefix="U" library_version="3">
+<deviceset name="ROB-14450" urn="urn:adsk.eagle:component:39984967/4" prefix="U" library_version="14">
 <description>&lt;b&gt;Power Management IC Development Tools SparkFun MotorDriver Dual TB6612FNG Head.&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="ROB-14450" x="0" y="0"/>
+<gate name="TB6612FNG" symbol="ROB-14450" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="ROB14450">
 <connects>
-<connect gate="G$1" pin="A01" pad="4"/>
-<connect gate="G$1" pin="A02" pad="5"/>
-<connect gate="G$1" pin="AIN1" pad="11"/>
-<connect gate="G$1" pin="AIN2" pad="10"/>
-<connect gate="G$1" pin="B01" pad="7"/>
-<connect gate="G$1" pin="B02" pad="6"/>
-<connect gate="G$1" pin="BIN1" pad="13"/>
-<connect gate="G$1" pin="BIN2" pad="14"/>
-<connect gate="G$1" pin="GND_1" pad="3"/>
-<connect gate="G$1" pin="GND_2" pad="8"/>
-<connect gate="G$1" pin="GND_3" pad="16"/>
-<connect gate="G$1" pin="PWMA" pad="9"/>
-<connect gate="G$1" pin="PWMB" pad="15"/>
-<connect gate="G$1" pin="STBY" pad="12"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VM" pad="1"/>
+<connect gate="TB6612FNG" pin="A01" pad="4"/>
+<connect gate="TB6612FNG" pin="A02" pad="5"/>
+<connect gate="TB6612FNG" pin="AIN1" pad="11"/>
+<connect gate="TB6612FNG" pin="AIN2" pad="10"/>
+<connect gate="TB6612FNG" pin="B01" pad="7"/>
+<connect gate="TB6612FNG" pin="B02" pad="6"/>
+<connect gate="TB6612FNG" pin="BIN1" pad="13"/>
+<connect gate="TB6612FNG" pin="BIN2" pad="14"/>
+<connect gate="TB6612FNG" pin="GND_1" pad="3"/>
+<connect gate="TB6612FNG" pin="GND_2" pad="8"/>
+<connect gate="TB6612FNG" pin="GND_3" pad="16"/>
+<connect gate="TB6612FNG" pin="PWMA" pad="9"/>
+<connect gate="TB6612FNG" pin="PWMB" pad="15"/>
+<connect gate="TB6612FNG" pin="STBY" pad="12"/>
+<connect gate="TB6612FNG" pin="VCC" pad="2"/>
+<connect gate="TB6612FNG" pin="VM" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39984966/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39984966/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -381,20 +476,72 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 </device>
 </devices>
 </deviceset>
-<deviceset name="STEP-UP" urn="urn:adsk.eagle:component:40068053/2" library_version="5">
+<deviceset name="STEP-UP" urn="urn:adsk.eagle:component:40068053/4" prefix="U" library_version="14">
 <gates>
-<gate name="G$1" symbol="STEP-UP" x="0" y="0"/>
+<gate name="STEP-UP" symbol="STEP-UP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="STEP-UP">
 <connects>
-<connect gate="G$1" pin="GND_IN" pad="GND_IN"/>
-<connect gate="G$1" pin="GND_OUT" pad="GND_OUT"/>
-<connect gate="G$1" pin="V_IN" pad="V_IN"/>
-<connect gate="G$1" pin="V_OUT" pad="V_OUT"/>
+<connect gate="STEP-UP" pin="GND_IN" pad="GND_IN"/>
+<connect gate="STEP-UP" pin="GND_OUT" pad="GND_OUT"/>
+<connect gate="STEP-UP" pin="V_IN" pad="V_IN"/>
+<connect gate="STEP-UP" pin="V_OUT" pad="V_OUT"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40068052/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40068052/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MINI560" urn="urn:adsk.eagle:component:40070191/6" prefix="U" library_version="15">
+<gates>
+<gate name="G$1" symbol="MINI560" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MINI560">
+<connects>
+<connect gate="G$1" pin="IN+" pad="P$3 P$4 P$7 P$8"/>
+<connect gate="G$1" pin="IN-" pad="P$1 P$2 P$5 P$6"/>
+<connect gate="G$1" pin="OUT+" pad="P$11 P$12 P$15 P$16"/>
+<connect gate="G$1" pin="OUT-" pad="P$9 P$10 P$13 P$14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40070190/6"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROMOTOR_N20" urn="urn:adsk.eagle:component:40074927/4" prefix="M" library_version="14">
+<gates>
+<gate name="G$1" symbol="MOTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_L" package="MICROMOTOR-L">
+<connects>
+<connect gate="G$1" pin="M+" pad="M+"/>
+<connect gate="G$1" pin="M-" pad="M-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40074926/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_R" package="MICROMOTOR-R">
+<connects>
+<connect gate="G$1" pin="M+" pad="M+"/>
+<connect gate="G$1" pin="M-" pad="M-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40074925/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -483,26 +630,25 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 </classes>
 <parts>
 <part name="U1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ESP32-DEVKIT-V1" device="" package3d_urn="urn:adsk.eagle:package:39983907/5"/>
-<part name="U2" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ROB-14450" device="" package3d_urn="urn:adsk.eagle:package:39984966/2"/>
-<part name="U$1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="STEP-UP" device="" package3d_urn="urn:adsk.eagle:package:40068052/2"/>
+<part name="U2" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="ROB-14450" device="" package3d_urn="urn:adsk.eagle:package:39984966/3"/>
 <part name="X1" library="Pines" library_urn="urn:adsk.eagle:library:34128979" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:36801862/2"/>
+<part name="U3" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="STEP-UP" device="" package3d_urn="urn:adsk.eagle:package:40068052/4"/>
+<part name="U4" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="MINI560" device="" package3d_urn="urn:adsk.eagle:package:40070190/6"/>
+<part name="M1" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="MICROMOTOR_N20" device="_L" package3d_urn="urn:adsk.eagle:package:40074926/4"/>
+<part name="M2" library="Boards" library_urn="urn:adsk.eagle:library:39983904" deviceset="MICROMOTOR_N20" device="_R" package3d_urn="urn:adsk.eagle:package:40074925/4"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="63.5" y="99.06" smashed="yes">
+<instance part="U1" gate="ESP32-DEVKIT-V1" x="63.5" y="99.06" smashed="yes">
 <attribute name="VALUE" x="73.66" y="121.92" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="73.66" y="76.2" size="1.778" layer="95" rot="R180" align="top-left"/>
 </instance>
-<instance part="U2" gate="G$1" x="58.42" y="149.86" smashed="yes">
+<instance part="U2" gate="TB6612FNG" x="58.42" y="149.86" smashed="yes">
 <attribute name="NAME" x="58.42" y="162.56" size="1.778" layer="95" align="top-center"/>
 <attribute name="VALUE" x="58.42" y="134.62" size="1.778" layer="96" rot="R180" align="top-center"/>
-</instance>
-<instance part="U$1" gate="G$1" x="58.42" y="175.26" smashed="yes">
-<attribute name="VALUE" x="58.42" y="167.64" size="1.778" layer="96" align="bottom-center"/>
-<attribute name="NAME" x="58.42" y="182.88" size="1.778" layer="95" align="top-center"/>
 </instance>
 <instance part="X1" gate="-1" x="33.02" y="177.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.48" y="178.562" size="1.524" layer="95" rot="R180"/>
@@ -510,331 +656,373 @@ Source: &lt;a href="https://www.sparkfun.com/products/14450"&gt; Datasheet &lt;/
 <instance part="X1" gate="-2" x="33.02" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.48" y="173.482" size="1.524" layer="95" rot="R180"/>
 </instance>
+<instance part="U3" gate="STEP-UP" x="58.42" y="175.26" smashed="yes">
+<attribute name="VALUE" x="58.42" y="167.64" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="NAME" x="58.42" y="182.88" size="1.778" layer="95" align="top-center"/>
+</instance>
+<instance part="U4" gate="G$1" x="2.54" y="129.54" smashed="yes">
+<attribute name="NAME" x="2.54" y="137.16" size="1.27" layer="94" align="top-center"/>
+<attribute name="VALUE" x="2.54" y="121.92" size="1.27" layer="94" align="bottom-center"/>
+</instance>
+<instance part="M1" gate="G$1" x="7.62" y="213.36" smashed="yes">
+<attribute name="NAME" x="7.62" y="220.98" size="1.27" layer="94" align="center"/>
+<attribute name="VALUE" x="7.62" y="205.74" size="1.27" layer="94" align="center"/>
+</instance>
+<instance part="M2" gate="G$1" x="38.1" y="213.36" smashed="yes">
+<attribute name="NAME" x="38.1" y="220.98" size="1.27" layer="94" align="center"/>
+<attribute name="VALUE" x="38.1" y="205.74" size="1.27" layer="94" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="ENABLE" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="EN"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="EN"/>
 <wire x1="48.26" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
 <label x="43.18" y="116.84" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIX36" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VP"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="VP"/>
 <wire x1="48.26" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <label x="43.18" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIX39" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VN"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="VN"/>
 <wire x1="48.26" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <label x="43.18" y="111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIX34" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D34"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D34"/>
 <wire x1="48.26" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
 <label x="43.18" y="109.22" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIX35" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D35"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D35"/>
 <wire x1="48.26" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
 <label x="43.18" y="106.68" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO32" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D32"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D32"/>
 <wire x1="48.26" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 <label x="43.18" y="104.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO33" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D33"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D33"/>
 <wire x1="48.26" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
 <label x="43.18" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO25" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D25"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D25"/>
 <wire x1="48.26" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
 <label x="43.18" y="99.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO26" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D26"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D26"/>
 <wire x1="48.26" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
 <label x="43.18" y="96.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO27" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D27"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D27"/>
 <wire x1="48.26" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 <label x="43.18" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D14"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D14"/>
 <wire x1="48.26" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 <label x="43.18" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D12"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D12"/>
 <wire x1="48.26" y1="88.9" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
 <label x="43.18" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D13"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D13"/>
 <wire x1="48.26" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
 <label x="43.18" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VIN"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="VIN"/>
 <wire x1="48.26" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
 <label x="43.18" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO23" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D23"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D23"/>
 <wire x1="78.74" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 <label x="83.82" y="116.84" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO22" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D22"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D22"/>
 <wire x1="78.74" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 <label x="83.82" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="TX0"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="TX0"/>
 <wire x1="78.74" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <label x="83.82" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RX0"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="RX0"/>
 <wire x1="78.74" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <label x="83.82" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO21" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D21"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D21"/>
 <wire x1="78.74" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
 <label x="83.82" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO19" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D19"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D19"/>
 <wire x1="78.74" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 <label x="83.82" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D18"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D18"/>
 <wire x1="78.74" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <label x="83.82" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D5"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D5"/>
 <wire x1="78.74" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="83.82" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO17" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="TX2"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="TX2"/>
 <wire x1="78.74" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <label x="83.82" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO16" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RX2"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="RX2"/>
 <wire x1="78.74" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 <label x="83.82" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D4"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D4"/>
 <wire x1="78.74" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="83.82" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D2"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D2"/>
 <wire x1="78.74" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <label x="83.82" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D15"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="D15"/>
 <wire x1="78.74" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <label x="83.82" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="GND"/>
 <wire x1="78.74" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 <label x="83.82" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND_1"/>
+<pinref part="U2" gate="TB6612FNG" pin="GND_1"/>
 <wire x1="43.18" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <label x="38.1" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND_2"/>
+<pinref part="U2" gate="TB6612FNG" pin="GND_2"/>
 <wire x1="43.18" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
 <label x="38.1" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND_3"/>
+<pinref part="U2" gate="TB6612FNG" pin="GND_3"/>
 <wire x1="73.66" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
 <label x="78.74" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND_IN"/>
 <pinref part="X1" gate="-1" pin="S"/>
 <wire x1="40.64" y1="177.8" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
 <junction x="38.1" y="177.8"/>
 <wire x1="38.1" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="177.8" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <label x="38.1" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="STEP-UP" pin="GND_IN"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND_OUT"/>
-<wire x1="76.2" y1="177.8" x2="81.28" y2="177.8" width="0.1524" layer="91"/>
-<label x="81.28" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="-12.7" y1="127" x2="-15.24" y2="127" width="0.1524" layer="91"/>
+<label x="-15.24" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="IN-"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="127" x2="20.32" y2="127" width="0.1524" layer="91"/>
+<label x="20.32" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="OUT-"/>
 </segment>
 </net>
 <net name="3V3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="3V3"/>
+<pinref part="U1" gate="ESP32-DEVKIT-V1" pin="3V3"/>
 <wire x1="78.74" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="83.82" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="OUT+"/>
+<label x="20.32" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="A01"/>
+<pinref part="U2" gate="TB6612FNG" pin="A01"/>
 <wire x1="43.18" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="A02"/>
+<pinref part="U2" gate="TB6612FNG" pin="A02"/>
 <wire x1="43.18" y1="147.32" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="B02"/>
+<pinref part="U2" gate="TB6612FNG" pin="B02"/>
 <wire x1="43.18" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="B01"/>
+<pinref part="U2" gate="TB6612FNG" pin="B01"/>
 <wire x1="43.18" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PWMA"/>
+<pinref part="U2" gate="TB6612FNG" pin="PWMA"/>
 <wire x1="73.66" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AIN2"/>
+<pinref part="U2" gate="TB6612FNG" pin="AIN2"/>
 <wire x1="73.66" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AIN1"/>
+<pinref part="U2" gate="TB6612FNG" pin="AIN1"/>
 <wire x1="73.66" y1="152.4" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="STBY"/>
+<pinref part="U2" gate="TB6612FNG" pin="STBY"/>
 <wire x1="73.66" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BIN1"/>
+<pinref part="U2" gate="TB6612FNG" pin="BIN1"/>
 <wire x1="73.66" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BIN2"/>
+<pinref part="U2" gate="TB6612FNG" pin="BIN2"/>
 <wire x1="73.66" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PWMB"/>
+<pinref part="U2" gate="TB6612FNG" pin="PWMB"/>
 <wire x1="73.66" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VM" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VM"/>
+<pinref part="U2" gate="TB6612FNG" pin="VM"/>
 <wire x1="43.18" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <label x="38.1" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="V_OUT"/>
 <wire x1="76.2" y1="172.72" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
 <label x="81.28" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="STEP-UP" pin="V_OUT"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="U2" gate="TB6612FNG" pin="VCC"/>
 <wire x1="43.18" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="BAT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="V_IN"/>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="40.64" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="172.72" x2="38.1" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
+<junction x="38.1" y="172.72"/>
+<wire x1="38.1" y1="172.72" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
+<label x="38.1" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="STEP-UP" pin="V_IN"/>
+</segment>
+<segment>
+<wire x1="-12.7" y1="132.08" x2="-15.24" y2="132.08" width="0.1524" layer="91"/>
+<label x="-15.24" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="IN+"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<wire x1="76.2" y1="177.8" x2="81.28" y2="177.8" width="0.1524" layer="91"/>
+<label x="81.28" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="STEP-UP" pin="GND_OUT"/>
 </segment>
 </net>
 </nets>
