@@ -1,0 +1,6 @@
+SFH 9206
+QRE1113
+
+TCRT 5000
+
+https://www.digikey.com.mx/es/products/filter/sensores-%C3%B3pticos/reflejante-salida-anal%C3%B3gica/546

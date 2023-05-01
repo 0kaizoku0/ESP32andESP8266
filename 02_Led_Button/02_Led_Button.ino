@@ -1,8 +1,7 @@
 #define LED_BUILTIN 2
-#define TIME_LED    500
+#define TIME_LED 500
 
-void setup()
-{
+void setup() {
   // Initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
